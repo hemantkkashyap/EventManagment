@@ -1,13 +1,16 @@
-# Event Management System
+# Team Event
 
-This is a web-based event management system developed using PHP, MySQL, CSS, and JavaScript. The system allows students to register for events and administrators to manage and approve registrations.
+An advanced web-based event management system tailored for student registrations and administrative oversight. Developed using PHP, MySQL, CSS, and JavaScript.
 
 ## Features
 
-- **User Authentication:** Secure login system for students and administrators.
-- **Event Registration:** Students can view and register for upcoming events.
-- **Admin Dashboard:** Administrators can view and manage student registrations.
-- **Email Notifications:** Automatic email confirmation upon successful registration.
+- **User Authentication:** A secure login system ensures the privacy of student and administrator data.
+
+- **Event Registration:** Students can easily explore upcoming events, access detailed information, and register seamlessly.
+
+- **Admin Dashboard:** Administrators have a centralized and efficient dashboard for managing student registrations across various events.
+
+- **Email Notifications:** Automatic and personalized email confirmations are sent to students upon successful event registration.
 
 ## Technologies Used
 
@@ -16,47 +19,21 @@ This is a web-based event management system developed using PHP, MySQL, CSS, and
 - **Database:** MySQL
 - **Email:** PHP Mailer
 
-## Setup
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/your-username/event-management-system.git
-    ```
-
-2. Import the SQL schema from `database/schema.sql` into your MySQL database.
-
-3. Configure the database connection in `config/config.php`.
-
-4. Install dependencies:
-
-    ```bash
-    composer install
-    ```
-
-5. Set up your web server to point to the `public` directory.
-
-6. Ensure proper file and folder permissions:
-
-    ```bash
-    chmod -R 755 storage
-    ```
-
-7. Access the application in your web browser.
-
 ## Usage
 
 1. **Student Portal:**
-    - Log in to the student portal to view upcoming events.
-    - Register for events and receive confirmation emails.
+   - **Login:** Access the student portal to explore upcoming events.
+   - **Event Details:** View detailed information about each event.
+   - **Registration:** Register for events with a user-friendly interface.
+   - **Confirmation:** Receive automatic and personalized confirmation emails upon successful registration.
 
 2. **Admin Dashboard:**
-    - Log in to the admin dashboard to manage student registrations.
-    - Approve or cancel student registrations.
+   - **Login:** Access the admin dashboard for comprehensive event management.
+   - **Approval:** Efficiently approve or cancel student registrations for various events.
 
 ## Contributing
 
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
+Contributions are welcomed! Please review the [contribution guidelines](CONTRIBUTING.md) before getting started.
 
 ## License
 
@@ -64,9 +41,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Thanks to [PHP Mailer](https://github.com/PHPMailer/PHPMailer) for email functionality.
-- Special thanks to our contributors!
+- Special thanks to [PHP Mailer](https://github.com/PHPMailer/PHPMailer) for providing robust email functionality.
+- Gratitude to all our contributors for their valuable input.
 
 ## Contact
 
-For issues and inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
+For any issues or inquiries, please reach out to [codeboxp1@gmail.com](mailto:codeboxp1@gmail.com).
