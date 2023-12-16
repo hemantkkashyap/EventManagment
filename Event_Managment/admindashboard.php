@@ -112,9 +112,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['approveBtn'])) {
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('kashyaphemant2004@gmail.com', 'Event Head');
+        $mail->setFrom('kas@gmail.com', 'Event Head');
         $mail->addAddress($useremail);     //Add a recipient            //Name is optional
-        $mail->addReplyTo('kashyaphemant2004@gmail.com', 'Event Head');
+        $mail->addReplyTo('kas@gmail.com', 'Event Head');
        //Optional name
     
         //Content
