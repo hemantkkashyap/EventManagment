@@ -219,7 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['approveBtn'])) {
     // Step 1: Database Connection
     $servername = "localhost"; // Change this if your database is hosted elsewhere
     $username = "root";
-    $password = "Him@nshu2004";
+    $password = "******";
     $dbname = "event_managment";
 
     try {
