@@ -38,7 +38,7 @@ $year = $_POST['year'];
 
   $servername = "localhost"; // Change this if your database is hosted elsewhere
 $username = "root";
-$password = "Him@nshu2004";
+$password = "******";
 $dbname = "event_managment";
 
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -87,9 +87,9 @@ $dbname = "event_managment";
           $mail->Port       = 587; // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
           // Recipients
-          $mail->setFrom('kashyaphemant2004@gmail.com', 'Event Head');
+          $mail->setFrom('kas@gmail.com', 'Event Head');
           $mail->addAddress($useremail); // Add a recipient
-          $mail->addReplyTo('kashyaphemant2004@gmail.com', 'Event Head');
+          $mail->addReplyTo('kas@gmail.com', 'Event Head');
 
           // Content
           $mail->isHTML(true); // Set email format to HTML
