@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    background-color: rgb(58, 133, 219);
+    font-family: 'Arial', sans-serif;
+}
+
+#container{
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 350px;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+}
+
+
+#container #heading{
+   padding-top: 50px;
+    margin-left: 270px;
+}
+
+#container #Inputs{
+    margin-left: 100px;
+    width: 350px;
+
+}
+

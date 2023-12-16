@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #countdown {
+            font-size:120px;
+            font-weight: bold;
+            color: white;
+            padding-top: 170px;
+        }
+
+        .contanier{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<input type="number" id="hours" min="1" value="5">
+<button onclick="startCountdown()">Start Countdown</button>
+
+<div class="contanier">
+<div id="countdown">00:00:00</div>
+</div>
+
+<script>
+    let countdown;
+    
+    function startCountdown() {
+        // Get the number of hours from the input
+        const hoursInput = document.getElementById("hours").value;
+        const hours = parseInt(hoursInput, 10);
+
+        // Calculate the end time based on the current time and the input hours
+        const countDownDate = new Date().getTime() + hours * 60 * 60 * 1000;
+
+        // Update the countdown every 1 second
+        countdown = setInterval(function () {
+            // Get the current date and time
+            const now = new Date().getTime();
+
+            // Calculate the remaining time
+            const distance = countDownDate - now;
+
+            // Calculate hours, minutes, and seconds
+            const h = Math.floor(distance / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = `${formatTime(h)}:${formatTime(m)}:${formatTime(s)}`;
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    }
+
+    function formatTime(time) {
+        // Add leading zero if the time is less than 10
+        return time < 10 ? "0" + time : time;
+    }
+</script>
+
+</body>
+</html>

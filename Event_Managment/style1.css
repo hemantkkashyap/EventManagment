@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg'); /* Default background image */
+    background-size: cover;
+}
+
+#container{
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 350px;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    display: flex;
+}
+
+
+#container #left{
+    padding: 25px;
+    width: 450px;
+}
+#container #right{
+    margin-top: 120px;
+    width:300px;
+    height: 300px;
+}
+#container #right h7{
+    padding-left: 80px;
+}
+#container #heading{
+   padding-top: 50px;
+    margin-left: 270px;
+}
+
+#container #Inputs{
+    margin-left: 100px;
+    width: 350px;
+}
+
+#container #column{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}

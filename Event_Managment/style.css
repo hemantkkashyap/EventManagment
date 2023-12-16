@@ -1,0 +1,337 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+    }
+
+    .container-fluid {
+      padding: 10px; /* Add some space around the items */
+    }
+
+    .nav-right {
+      margin-top: 10px; /* Add some space between the logo and the buttons */
+    }
+  }
+
+    /* Add custom styles for responsiveness */
+    @media (max-width: 768px) {
+        #left, #right {
+            width: 100%;
+            text-align: center;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+        }
+
+        .card {
+            height: auto;
+        }
+    }
+    .container0 {
+        display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Align items vertically in the center */
+    padding-top: 70px;
+    background-color: blueviolet;
+    }
+
+    /* Add a media query for smaller screens */
+    @media (max-width: 768px) {
+        .container0 {
+            flex-direction: column; /* Change to column layout on smaller screens */
+            height: auto; /* Auto height for smaller screens */
+        }
+    }
+    #left, #right {
+        flex: 1;
+        max-width: 48%; /* Set a maximum width for each item */
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 1%; /* Add a small margin between items */
+    }
+    /* Media query for smaller screens */
+@media (max-width: 768px) {
+    #left, #right {
+        max-width: 100%; /* Make each item take up the full width in column layout */
+        margin: 0; /* Remove margin between items in column layout */
+    }
+}
+#right {
+    max-width: 600px; /* Set a maximum width for the "right" div */
+}
+.container0 #right{
+    margin-top: 25px;
+    margin-left: 140px;
+    width: 680px;
+}
+.container0 #Wlcm{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size:60px;
+    
+}
+
+#Wlcm{
+    transition: font-size 0.5s ease-in-out; /* Add a smooth transition effect */
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a white glow effect */
+    animation: pulse 1.5s infinite;
+}
+/*
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        font-size: 70px;
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        font-size: 85px;
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        font-size: 80px;
+    }
+}*/
+.container0 #logo{
+    margin-left: 100px;
+    width: 550px;
+}
+#container2{
+    display: flex;
+}
+
+#container2 #left{
+
+    width: 500px;
+    height: 600px;
+    padding:100px;
+}
+#container2 #right{
+    padding: 50px;
+    width: 1000px;
+    height: 600px; 
+}
+#container2 #left img{
+    width: 300px;
+    height: 300px; 
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.events .card {
+    flex: 0 0 calc(33.33% - 150px); /* Three cards in a row, with some spacing between */
+    max-width: calc(33.33% - 150px); /* Set max-width to avoid stretching on smaller screens */
+    margin: 10px;
+  /* Adjust margin as needed for spacing between cards */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .events .card {
+        flex: 0 0 calc(50% - 80px); /* Two cards in a row for smaller screens */
+        max-width: calc(50% - 80px);
+        justify-content: space-evenly;
+    }
+}
+#heading{
+    margin-left: 450px;
+}
+.column{
+    margin-top: 60px;
+    width: 1520px;
+    height: 600px;
+    display: flex;
+}
+
+.column .user ,.column .admin{
+    width: 770px;
+    height: 595px;
+    border: 2px solid rgb(200,200,200);
+    padding: 100px;
+}
+.admin,.user{
+    display: flex;
+}
+
+.column .user  input,.column .admin input{
+    border: 1px solid black;
+    width: 400px;
+}
+#profile{
+    border-radius: 500px;
+    border: transparent;
+    background-color: white; 
+
+}
+#profile img{
+    border-radius: 500px;
+    background-color: white;
+    width: 38px;
+    height: 38px;
+}
+
+#user{
+    color: white;
+    font-size: 25px;
+}
+
+.column1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.navbar{
+    background-color: #add8e6; /* Default blue color */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-brand{
+    color: #333; 
+    font-size: 30px;
+}
+.nav-right{
+    width: 220px;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.login-button,
+.signup-button {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border: transparent;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Text color for buttons */
+}
+
+.login-button {
+    background-color: #4CAF50; /* Green color for login button */
+}
+
+.signup-button {
+    background-color: #FF5722; /* Orange color for sign-up button */
+}
+
+/* Change the background color on button hover */
+.login-button:hover,
+.signup-button:hover {
+    opacity: 0.8; /* Reduce opacity on hover for a subtle effect */
+}
+
+/* styles.css */
+
+/* Add styling for the hover effect for each card */
+#card1:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+#card2:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+#card3:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+/* styles.css */
+
+/* Add styling for the hover effect and box shadow for each card */
+#card1,
+#card2,
+#card3 {
+margin-bottom:300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: box-shadow 0.6s ease; /* Add a smooth transition for the box shadow */
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+    transition: transform 0.4s ease, box-shadow 0.3s ease; /* Add transitions for both transform and box shadow */
+}
+
+.r{
+    width: 200px;
+}
+#adminimg{
+    margin-top: 130px;
+    margin-left: 50px;
+    width: 350px;
+}
+
+#userimg{
+    margin-top:-100px;
+    margin-left:50px;
+    width: 350px;
+}
+
+.dashnav-right{
+display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
